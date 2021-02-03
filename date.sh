@@ -1,1 +1,1 @@
-date > t.txt
+date > ./t.txt
