@@ -30,3 +30,17 @@ jobs:
         run: |
           chmod +x ./date.sh
           ./date.sh
+          
+      - name: Update files on GitHub
+        # You may pin to the exact commit or the version.
+        # uses: test-room-7/action-update-file@eb359a156419371010bcda984013cfb66b887c6d
+        uses: test-room-7/action-update-file@v1.5.0
+        with:
+          # Commit message
+          commit-msg: "Auto Commit" # optional
+          # Path to file(s) or glob pattern
+          file-path: ./t.txt # optional
+
+          #github-token: # optional
+
+          allow-removing: false # optional
