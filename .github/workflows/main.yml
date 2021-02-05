@@ -39,7 +39,7 @@ jobs:
           # Commit message
           commit-msg: "Auto Commit" # optional
           # Path to file(s) or glob pattern
-          file-path: ./t.txt # optional
+          file-path: t.txt # optional
 
           github-token:  ${{ secrets.GITHUB_TOKEN }} # optional
 
